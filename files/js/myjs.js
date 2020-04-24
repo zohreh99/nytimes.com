@@ -4,6 +4,10 @@ function menu() {
 	// body...
 }
 function search() {
-	alert('search');
+	document.getElementsByclassName("input-search").height = 300;
+
+    // x.style.display = "block";
+   
+  
 	// body...
 }

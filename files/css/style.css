@@ -58,12 +58,18 @@ section{
 .item:nth-child(2){
 	padding: .2em .4em;
 	border-radius: 2px;
+	pointer-events: auto;
 }
 
 .item:nth-child(2):hover{
 	background-color: #f7f7f7;
 }
+.input-search{
 
+}
+.item:nth-child(2):active{
+	
+}
 .item:nth-child(3){
 	padding: .4em;
 	flex-grow: 1;
@@ -242,6 +248,48 @@ section{
 	font-weight: 400;
 	font-family: nyt-imperial, georgia, "times new roman", times, serif;
 	color: #888888;
+}
+.section3{
+	margin-right: 10em;
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    border: 1px solid pink;
+
+}
+.date-icons{
+	width: 100%;
+	display: flex;
+    border: 1px solid blue;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.date{
+	border: 1px solid red;
+    /* align-self: flex-start; */
+    flex-grow: 1;
+}
+.icons{
+
+ 	align-self: inherit;
+    border: 1px solid yellow;
+    flex-grow: 1;
+}
+i.fab , i.fas {
+    display: inline-block;
+    border-radius: 50px;
+    padding: .4em .6em;
+    background-color: #eeeeee;
+    color: #000000;
+}
+i.fa-facebook-f{
+	 padding: .4em .7em;
+}
+.icon{
+	margin-left: .5em;
 }
 @media only screen and (max-width: 575px) {
 
