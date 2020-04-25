@@ -214,8 +214,8 @@ section{
 }
 .img-alan{
 	cursor: pointer;
-	    max-width: 1004px;
-    min-width: 600px
+	max-width: 80vw;
+    /*min-width: 300px;*/
 }
 .title-section2{
 	font-size: 55px;
@@ -225,12 +225,12 @@ section{
 	line-height: 66px;
 	color: #121212;
 }
-.img-section2{
+/*.img-section2{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
+}*/
 .undertitlesec2{
 	margin-top: .5em;
 	align-self: flex-start;
@@ -250,14 +250,64 @@ section{
 	color: #888888;
 }
 .section3{
-	margin-right: 10em;
+	width: 100%;
     display: flex;
     margin-top: 3em;
     justify-content: center;
-    align-items: flex-start;
+    align-items: baseline;
     flex-flow: column wrap;
     border: 1px solid pink;
 
+}
+.fa-bookmark{
+	font-size: 1.2em;f
+}
+.fa-comment-alt{
+	font-size: 1.5em;
+}
+.icon-count{
+	display: inline-block;
+    position: relative;
+}
+.icon-count::after{
+	content: "615";
+    position: absolute;
+    font-weight: 500;
+    top: .5em;
+    right: .5em;
+    font-size: 12px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-align: center;
+
+}
+.lisection3{
+	padding-left: .5em;
+}
+.ulsection3{
+	list-style: none;
+	display: flex;
+	border: 1px solid yellow;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 8em;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.div1{
+	display: flex;
+}
+.div2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title-section3{
+	padding-right: 10em;
+    /* margin-left: 50px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .date-icons{
 	width: 100%;
@@ -266,30 +316,70 @@ section{
     align-items: center;
     justify-content: center;
     margin-top: 2em;
+
 }
 .date{
 	border: 1px solid red;
+	/*flex-grow: 3.5;*/
     /* align-self: flex-start; */
-    flex-grow: 1;
 }
 .icons{
-
- 	align-self: inherit;
-    border: 1px solid yellow;
-    flex-grow: 1;
+	border: 1px solid red;
+	/*flex-grow: 1;*/
 }
-i.fab , i.fas {
+
+.fa-padding:hover{
+	background-color: #fff;
+	box-shadow: 0px 0px 2px #888;
+}
+.far:hover{
+	color:  #888;
+}
+.fa-padding {
     display: inline-block;
     border-radius: 50px;
-    padding: .4em .6em;
+    padding: .4em;
     background-color: #eeeeee;
     color: #000000;
+
+
 }
-i.fa-facebook-f{
-	 padding: .4em .7em;
+.fa-facebook-f{
+	 padding: .3em .6em;
 }
 .icon{
-	margin-left: .5em;
+	margin-left: .3em;
+}
+.far{
+	color: #000000;
+}
+.titleby , .titleDennis{
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #333333;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;;
+	text-decoration: none;
+}
+.titleDennis:hover{
+	text-decoration-line:underline; ;
+	text-decoration-style: initial;
+	text-decoration-color: #cccccc;
+}
+.date{
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #333333;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;;
+
+}
+.text{
+	font-size: 28px;
+	line-height: 41px;
+	font-weight: 400;
+	color: #333333;
+	font-family: nyt-imperial, georgia, "times new roman", times, serif;;
 }
 @media only screen and (max-width: 575px) {
 
@@ -301,9 +391,23 @@ i.fa-facebook-f{
 
 }
 @media only screen and (min-width: 992px) {
-
+.img-alan{
+	cursor: pointer;
+	max-width: 1004px;
+    min-width: 600px;
+}
+.section3{
+	padding-left: 21em;
+}
 
 }
-@media only screen and (max-width: 1200px) {
-	
+@media only screen and (min-width: 1200px) {
+	.img-alan{
+	cursor: pointer;
+	    max-width: 1004px;
+    min-width: 600px;
+}
+.section3{
+	padding-left: 21em;
+}
 }
